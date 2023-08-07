@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<table>
+    <thead>
+      <tr>
+        <th>Book Name</th>
+        <th>Author</th>
+        <th>Order Quantity</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let order of orders">
+        <td>{{ order.book.bookName }}</td>
+        <td>{{ order.book.authorName }}</td>
+        <td>{{ order.orderquantity }}</td>
+        <td>
+          <button (click)="editOrder(order)">Edit</button>
+          <!--<button (click)="navigateToEditOrder(order.orderId)">Edit Order</button>-->
+          <button (click)="removeOrder(order)">Remove</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  

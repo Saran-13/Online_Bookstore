@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<h2>Payment Details</h2>
+<div *ngIf="payment">
+  <p>Payment ID: {{ payment.paymentId }}</p>
+  <p>Total Amount: {{ payment.totalAmt }}</p>
+  <p>Name on Card: {{ payment.nameOnCard }}</p>
+  <p>Card Number: {{ payment.cardNumber }}</p>
+  <p>Expiration Year: {{ payment.expYear }}</p>
+  <p>CVV: {{ payment.cvv }}</p>
+</div>

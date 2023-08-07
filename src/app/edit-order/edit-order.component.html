@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div *ngIf="order">
+  <p><strong>Order ID:</strong> {{ order.orderId }}</p>
+  <p><strong>Book Name:</strong> {{ order.book.bookName }}</p>
+  <p><strong>Author:</strong> {{ order.book.authorName }}</p>
+
+  <div class="form-group">
+    <label for="orderQuantity">Order Quantity:</label>
+    <input type="number" class="form-control" id="orderQuantity" [(ngModel)]="order.orderquantity" name="orderQuantity" required>
+  </div>
+
+  <button (click)="updateOrder()">Update Order</button>
+</div>

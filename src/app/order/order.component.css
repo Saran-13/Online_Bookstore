@@ -1,0 +1,114 @@
+/* CSS code for the given HTML */
+
+/* Reset default margin and padding for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Style the logo */
+.logo {
+  flex-grow: 1;
+}
+
+/* Style the h1 in the logo */
+.logo h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the navigation menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Style navigation menu items (li) */
+nav li {
+  margin-right: 20px;
+}
+
+/* Remove margin-right from the last navigation menu item */
+nav li:last-child {
+  margin-right: 0;
+}
+
+/* Style navigation links (a) */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Style navigation links on hover */
+nav a:hover {
+  background-color: #0056b3;
+  border-radius: 3px;
+}
+
+/* Style the main content area */
+main {
+  padding: 20px;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style table headers */
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Style table cells */
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+/* Style table rows on hover */
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+/* Style the input field */
+input[type="number"] {
+  width: 60px;
+}
+
+/* Style the "Place Order" button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+}
+
+/* Style "Place Order" button on hover */
+button:hover {
+  background-color: #45a049;
+}
+
+/* Center the button in its cell */
+td > button {
+  display: block;
+  margin: 0 auto;
+}

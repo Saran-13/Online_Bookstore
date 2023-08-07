@@ -1,0 +1,43 @@
+/* Styles for the table */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.user-table th,
+.user-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Styles for the table header */
+.user-table thead {
+  background-color: #f2f2f2;
+}
+
+/* Styles for table rows */
+.user-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Styles for buttons */
+button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Center the buttons in the cell */
+td button {
+  display: block;
+  margin: 0 auto;
+}

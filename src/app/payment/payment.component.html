@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<form (ngSubmit)="savePayment()" #paymentForm="ngForm">
+  <div>
+    <label for="nameOnCard">Name on Card:</label>
+    <input type="text" id="nameOnCard" name="nameOnCard" [(ngModel)]="payment.nameOnCard" required>
+    <div *ngIf="paymentForm.controls['nameOnCard'].invalid && paymentForm.controls['nameOnCard'].touched">
+      Name on Card is required.
+    </div>
+  </div>
+  <div>
+    <label for="cardNumber">Card Number:</label>
+    <input type="text" id="cardNumber" name="cardNumber" [(ngModel)]="payment.cardNumber" required>
+    <div *ngIf="paymentForm.controls['cardNumber'].invalid && paymentForm.controls['cardNumber'].touched">
+      Card Number is required.
+    </div>
+  </div>
+  <div>
+    <label for="expYear">Expiration Year:</label>
+    <input type="text" id="expYear" name="expYear" [(ngModel)]="payment.expYear" required>
+    <div *ngIf="paymentForm.controls['expYear'].invalid && paymentForm.controls['expYear'].touched">
+      Expiration Year is required.
+    </div>
+  </div>
+  <div>
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" name="cvv" [(ngModel)]="payment.cvv" required>
+    <div *ngIf="paymentForm.controls['cvv'].invalid && paymentForm.controls['cvv'].touched">
+      CVV is required.
+    </div>
+  </div>
+  <button type="submit" [disabled]="paymentForm.invalid">Submit Payment</button>
+</form>
+

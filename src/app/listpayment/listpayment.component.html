@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<table>
+  <thead>
+    <tr>
+      <th>Order ID</th>
+      <th>Book Name</th>
+      <th>Book Quantity</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let order of orders">
+      <td>{{ order.orderId }}</td>
+      <td>{{ order.book.bookName }}</td>
+      <td>{{ order.orderquantity }}</td>
+      <td><button (click)="redirectToPayment(order.orderId)">Pay</button></td>
+    </tr>
+  </tbody>
+</table>

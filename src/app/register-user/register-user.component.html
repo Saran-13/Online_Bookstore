@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<html>
+  <body>
+<form (ngSubmit)="registerUser()">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" [(ngModel)]="newUser.firstName" required>
+  
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="newUser.lastName" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" [(ngModel)]="newUser.email" required>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" [(ngModel)]="newUser.password" required>
+  
+    <label for="mobileNo">Mobile Number:</label>
+    <input type="tel" id="mobileNo" name="mobileNo" [(ngModel)]="newUser.mobileNo" required pattern="[0-9]{10}">
+  
+    <label for="streetName">Street Name:</label>
+    <input type="text" id="streetName" name="streetName" [(ngModel)]="newUser.streetName" required>
+  
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" [(ngModel)]="newUser.city" required>
+  
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" [(ngModel)]="newUser.state" required>
+  
+    <label for="postalCode">Postal Code:</label>
+    <input type="number" id="postalCode" name="postalCode" [(ngModel)]="newUser.postalCode" required>
+  
+    <button type="submit">Register</button>
+</form>
+</body>
+  </html>
